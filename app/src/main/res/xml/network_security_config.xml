@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config>
+        <trust-anchors>
+            <certificates src="system"/>
+            <certificates src="user"/>
+        </trust-anchors>
+        <config cleartextTrafficPermitted="true" />
+    </base-config>
+    <!-- 중복해서 claertextTraffic 을 설정해주었어도 여전히 claertextTraffic 에러가 웹뷰에서 일어났음. -->
+</network-security-config>
